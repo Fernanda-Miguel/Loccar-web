@@ -16,6 +16,7 @@ include "conexao.php";
 $id= $_POST ['id'];
 
 $sql= "DELETE FROM `veiculos` WHERE id=$id" ;
+$sql= "DELETE FROM `usuarios` WHERE id=$id" ;
 
 if (mysqli_query($conexao , $sql)) {
 

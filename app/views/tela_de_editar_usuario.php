@@ -7,7 +7,7 @@ include "../controller/conexao.php";
 $id= $_GET ['id']?? '';
 
 //selecionando a tabela 
-$sql= "SELECT * FROM `veiculos` WHERE id = $id";
+$sql= "SELECT * FROM `usuarios` WHERE id = $id";
 
 //colocando vareaveis para editar
 $dados = mysqli_query($conexao , $sql);
@@ -71,28 +71,19 @@ $linha = mysqli_fetch_assoc($dados);
     
     <br>  
     <br>
-    <p class="fs-3 text-white text-center">Atualizar dados  do  veiculo</p>
+    <p class="fs-3 text-white text-center">Atualizar dados  do Usuário</p>
     <br>
     <br>
 
-        <form method="post" action="../controller/editar.php">
+        <form method="post" action="../controller/editar_usuario.php">
             
           <div class="mb-3">
-            <input required name="marca" type="text" class="form-control" id="marca" aria-describedby="emailHelp" placeholder="marca do veiculo:" autofocus>    
+            <input required name="email" type="text" class="form-control" id="marca" aria-describedby="emailHelp" placeholder="Email:" autofocus>    
           </div>
           <div class="mb-3">
-            <input required name="modelo" type="text" class="form-control" id="modelo" aria-describedby="emailHelp" placeholder="modelo do veiculo:">    
+            <input required name="senha" type="text" class="form-control" id="modelo" aria-describedby="emailHelp" placeholder="Senha:">    
           </div>
-          <div class="mb-3">     
-            <input required name="cor" type="text" class="form-control" id="cor" aria-describedby="emailHelp" placeholder="cor do veiculo:">    
-          </div>
-          <div class="mb-3">
-            <input required name="placa" type="text" class="form-control" id="placa" aria-describedby="emailHelp" placeholder="placa do veiculo:">
-          </div>
-          <div class="mb-3">
-            <input required name="qportas" type="text" class="form-control" id="qportas" aria-describedby="emailHelp" placeholder="quantidade portas do veiculo:">
-          </div>
-       
+      
           <div class="d-grid gap-2 col-6 mx-auto">
 
             <input type="submit" class="btn corSecundaria text-white"  name="submit" id="submit" type="submit" value="Atualizar">
@@ -118,7 +109,10 @@ $linha = mysqli_fetch_assoc($dados);
         <br>
         <br>
         <br>
-        
+        <br>
+        <br>
+        <br>
+           
     </div>
  
   <footer class="corPrimaria">

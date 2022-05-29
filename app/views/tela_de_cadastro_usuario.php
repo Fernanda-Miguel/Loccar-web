@@ -41,27 +41,19 @@ session_start();
     
     <br>  
     <br>
-    <p class="fs-1 text-white text-center">Cadastrar veiculo</p>
+    <p class="fs-1 text-white text-center">Cadastrar Usuário</p>
     <br>
     <br>
 
-        <form method="post" action="../controller/cadastrar.php">
+        <form method="post" action="../controller/cadastrar_usuario.php">
             
           <div class="mb-3">
-            <input required name="marca" type="text" class="form-control" id="nomeADM" aria-describedby="emailHelp" placeholder="marca do veiculo:" autofocus>    
+            <input required name="email" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Email:" autofocus>    
           </div>
           <div class="mb-3">
-            <input required name="modelo" type="text" class="form-control" id="nomeADM" aria-describedby="emailHelp" placeholder="modelo do veiculo:">    
+            <input required name="senha" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Senha:">    
           </div>
-          <div class="mb-3">     
-            <input required name="cor" type="text" class="form-control" id="telefoneADM" aria-describedby="emailHelp" placeholder="cor do veiculo:">    
-          </div>
-          <div class="mb-3">
-            <input required name="placa" type="text" class="form-control" id="cpfADM" aria-describedby="emailHelp" placeholder="placa do veiculo:">
-          </div>
-          <div class="mb-3">
-            <input required name="qportas" type="text" class="form-control" id="senhaADM" aria-describedby="emailHelp" placeholder="quantidade portas do veiculo:">
-          </div>
+          
        
           <div class="d-grid gap-2 col-6 mx-auto">
 
@@ -72,19 +64,23 @@ session_start();
           </form>
 
           <br>
-          
-        
+          <br>
       </section>
 
       <div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
       </div>
 
   <footer class="corPrimaria">

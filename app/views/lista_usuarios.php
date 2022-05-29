@@ -7,7 +7,7 @@
     include('../controller/conexao.php');
 
     //pegando os dados das tabelas e transformando em vareaveis
-    $sql = "SELECT * FROM `veiculos`";
+    $sql = "SELECT * FROM `usuarios`";
 
     $dados= mysqli_query($conexao,$sql);
 
@@ -41,62 +41,39 @@
     </div>
 </nav>
 
-<div>
-  <br>
-  <br>
-  <br>
-</div>
 
-<section class="container center" style="max-width: 450px;">
-<div class="card text-center corPrimaria">
-    <div class="card-header">
-     <p class="fs-3 text-center text-white">Painel de Configuração</p>
-    </div>
-    <div class="card-body">
-      
+<div class="Config">
+    <br>
+    <p class="fs-1 text-center text-white">Painel de Configuração</p>
+    <br>
+    
     <div class="d-grid gap-2 col-6 mx-auto" style="max-width: 200px;">
     <br>
-      <a href="../views/tela_de_cadastro.php" class="btn corSecundaria text-white" type="button">Cadastrar veiculo
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-       <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-      </svg>
-      </a>
-      <a href="../views/tela_de_cadastro_usuario.php" class="btn corSecundaria text-white" type="button">Cadastrar Usuário
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-       <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-      </svg>
-      </a>
-      <a href="../views/lista_usuarios.php" class="btn corSecundaria text-white" type="button">Lista de usuários
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
-        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+      <a href="../views/home.php" class="btn corPrimaria text-white" type="button">Retornar 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+       <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
       </svg>
       </a>
       <br>
-      <br>
-    </div>  
     </div>
+    <br> 
 </div>
-</section>
-
-
 
 
 <section class="container">
 
 <br>
-    <p class="fs-1 text-center text-white">Veículos alugados</p>
+    <p class="fs-1 text-center text-white">Usuários cadastrados</p>
 <br>
 
-<table class="table bg-light">
+<main >
+
+<table class="table bg-light text-center" >
 
   <thead>
     <tr>    
-      <th scope="col">marca</th>
-      <th scope="col">modelo</th>
-      <th scope="col">cor</th>
-      <th scope="col">placa</th>
-      <th scope="col">quantidade de portas</th>
+      <th scope="col">Email</th>
+      <th scope="col">Senha</th>
       <th scope="col">Opções de edição</th>
     </tr>
   </thead>
@@ -111,23 +88,19 @@ while ($linha= mysqli_fetch_assoc ( $dados)) {
    //pegando os dados da vareavel dados e colocando em novas vareaveis e colocando na tabela
 
    $id = $linha ['id'];
-   $marca = $linha ['marca'];
-   $modelo = $linha ['modelo'];
-   $cor= $linha ['cor'];
-   $placa= $linha ['placa'];
-   $qportas= $linha ['qportas'];
+   $email = $linha ['email'];
+   $senha = $linha ['senha'];
+
 
     echo "
     
     <tr>
-    <td>$marca</td>
-    <td>$modelo</td>
-    <td>$cor</td>
-    <td>$placa</td>
-    <td>$qportas</td> 
+    <td>$email</td>
+    <td>$senha</td>
+   
     <td>
 
-    <a href='tela_de_editar.php? id=$id' class='btn btn-success'> Editar </a>
+    <a href='tela_de_editar_usuario.php? id=$id' class='btn btn-success'> Editar </a>
 
     <a href='#' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#confirmar'
     onClick= " . '"' . "pegar_dados( $id )" . '"'. ">Excluir</a>
@@ -177,6 +150,8 @@ while ($linha= mysqli_fetch_assoc ( $dados)) {
 
 
 </table>
+
+</main>
 
 </section>
 
