@@ -38,8 +38,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `email`, `senha`) VALUES
-(0, '', ''),
-(1, 'gean', '123'),
+(0, 'gean', '123'),
+(1, 'viviane', '123'),
 (2, 'fernanda', '123'),
 (3, 'claudete', '123');
 
